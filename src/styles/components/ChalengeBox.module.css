@@ -1,0 +1,113 @@
+.ChalengeBoxContainer{
+  height: 100%;
+
+  background: var(--white);
+  border-radius: 20px;
+  border:1px solid rgb(34, 9, 104);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+} 
+
+.chalengeNoActive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chalengeNoActive strong{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.chalengeNoActive p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+  max-width: 70%;
+  margin-top: 3rem;
+}
+
+.chalengeNoActive p img{
+  margin-bottom: 1rem;
+}
+
+.chalengeActive {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.chalengeActive header{
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0 2rem 1.5rem;
+  border-bottom: 1px solid var(--gray-line);
+}
+
+.chalengeActive main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chalengeActive main strong{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--title);
+  margin: 1.5rem 0 1rem;
+}
+
+.chalengeActive main p{
+  line-height: 1.5;
+}
+
+.chalengeActive footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.chalengeActive footer button{
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+
+  color: var(--white);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.chalengeActive footer button.chalengeFailedButton{
+  background: var(--red);
+  border:1px solid rgb(34, 9, 104);
+}
+
+.chalengeActive footer button.chalengeSucceedeButton{
+  background: var(--green);
+  border:1px solid rgb(34, 9, 104);
+}
+
+.chalengeActive footer button:hover{
+  filter: brightness(0.9);
+}
